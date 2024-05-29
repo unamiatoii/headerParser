@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/whoami', function(req, res){
-    res.json({ipaddress: req.ip, language: req.headers['accept-language'], sfotware: req.headers['user-agent']})
+    res.json({ipaddress: req.ip, language: req.headers['accept-language'], software: req.headers['user-agent']})
 })
 
 module.exports = app;
